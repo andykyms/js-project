@@ -1,0 +1,105 @@
+.h1{
+    display: flex;
+    text-align: center;
+    font-size: 3em;
+    justify-content: center;
+}
+body{
+    background-color: midnightblue;
+
+    color: gold; 
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+#container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#restartBtn{
+   
+    margin-top: 10px;
+    padding: 12px;
+    font-size:16px;
+    border: 1px solid black;
+    margin-left: 160px; 
+    width: 100px;
+    color: aliceblue;
+    background-color: gold;
+    border-radius: 10px;
+    &:hover{
+        background-color:greenyellow;
+    }
+    
+}
+#startBtn{
+    
+    margin-top: 20px;
+    padding: 12px;
+    font-size:16px;
+    border: 1px solid black;
+    margin-left:430px;
+    width: 100px;
+    color: aliceblue;
+    background-color: gold;
+    border-radius: 10px;
+    &:hover{
+        background-color:greenyellow;
+    }
+
+
+}
+#statusText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+#help{
+    
+    margin-top: 20px;
+    padding: 12px;
+    font-size:16px;
+    border: 1px solid black;
+    margin-left:510px;
+    width: 200px;
+    color: aliceblue;
+    background-color: gold;
+    border-radius: 10px;
+    animation: bounce 1s infinite;
+    &:hover{
+        background-color:greenyellow;
+    }
+    
+}
+
+  
